@@ -1,7 +1,16 @@
+/* importing some google fonts */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
+/* importing tailwindcss */
 @import "tailwindcss";
+
+/* these are the themes and utility class which will be easy to use because this is custum */
+
+/* @theme → CSS variable usage Usage : .card {
+  background-color: var(--color-primary);
+}
+*/
 
 @theme {
   --color-primary: #030014;
@@ -20,6 +29,7 @@
   --background-image-hero-pattern: url("/hero-bg.png");
 }
 
+/* @layer base → Base element styling : No class needed — it's global style applied to h1. */
 @layer base {
   body {
     font-family: "DM Sans", serif;
@@ -47,6 +57,18 @@
     @apply w-full max-w-lg h-auto object-contain mx-auto drop-shadow-md;
   }
 }
+
+/* @layer components → Custom component classes
+Usage :<div className="movie-card">
+  <img src="movie.jpg" alt="Movie Poster" />
+  <h3>Movie Title</h3>
+  <div className="content">
+    <span className="lang">English</span>
+    <span className="year">2024</span>
+  </div>
+</div>
+
+*/
 
 @layer components {
   .pattern {
@@ -142,6 +164,10 @@
   }
 }
 
+ /* @utility → Custom utility classes
+ Usage:  
+ <h2 className="text-gradient text-4xl font-bold">Gradient Text Example</h2>
+*/
 @utility text-gradient {
   @apply bg-linear-to-r from-[#D6C7FF] to-[#AB8BFF] bg-clip-text text-transparent;
 }
