@@ -9,3 +9,4 @@ Project Samples:
 ![Screenshot 2025-04-15 232433](https://github.com/user-attachments/assets/2b11c401-e4ee-4e0e-a780-c1c3a0d046c9)
 
 
+Figma Design Link : https://www.figma.com/design/kdu6x1bqzyCMbzezudt6s2/Movie-App-w--React?node-id=2-2&p=f&t=dG8sIazSegVexhbW-0
